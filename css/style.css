@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c0303;
+  color: rgb(172, 172, 172);
+  font-family: "Ubuntu", serif;
+  font-size: 25px;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__item {
+  margin-right: 40px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: rgb(223, 65, 65);
+}
+
+.navigation__link:hover {
+  opacity: 0.7;
+}
+
+.navigation__logo {
+  width: 80px;
+  margin-right: 100px;
+}
+
+.cards {
+  padding: 100px;
+}
+
+.cards__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 200px);
+  gap: 10px;
+}
+
+.cards__item {
+  background-color: rgb(61, 13, 13);
+  padding: 10px;
+  border: 1px solid rgb(75, 75, 75);
+}
+
+.cards__item:hover {
+  opacity: 0.6;
+}
+
+.cards__item--first {
+  /* grid-column-start: span 3;
+  grid-row-start: span 3; */
+  grid-column: 1/-1;
+}
+
+.cards__item:last-child {
+  margin-bottom: 0;
+}
+
+.prices {
+  background-color: rgb(61, 13, 13);
+  padding: 100px;
+}
+
+.about {
+  padding: 100px;
+  
+}
+
+.contacts {
+  background-color: rgb(61, 13, 13);
+  padding: 100px;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(223, 65, 65);
+}
+
+.footer__copyright::before {
+  content: '';
+  height: 2px;
+  width: 200px;
+  background-color: antiquewhite;
+}
